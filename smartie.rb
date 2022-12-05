@@ -4,8 +4,8 @@
 class Smartie < Formula
   desc "Smartie"
   homepage "https://github.com/insidegreen/smartie"
-  url "https://github.com/insidegreen/smartie/archive/refs/tags/v0.1.0.tar.gz"
-  sha256 "e35f52fc758f72a20d299ce0fd7c170bd41250f13be51c2b0dac30b905547e4f"
+  url "https://github.com/insidegreen/smartie/archive/refs/tags/v0.2.0.tar.gz"
+  sha256 "4a4d5504ed4629029c7bb1c853d86fbb580fc423b8be3f3f1920170efae68663"
   license "MIT"
 
   depends_on "go" => :build
@@ -15,7 +15,7 @@ class Smartie < Formula
   end
 
   service do
-    run opt_bin/"nats-server"
+    run opt_bin/"smartie"
   end
 
 end
