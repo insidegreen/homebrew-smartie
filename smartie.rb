@@ -11,7 +11,11 @@ class Smartie < Formula
   depends_on "go" => :build
 
   def install
-    system "go", "build", "cmd/mac-charger/main.go", *std_go_args(ldflags: "-s -w")
+    system "go", "build", *std_go_args(ldflags: "-s -w"), buildpath/"cmd/mac-charger/main.go"
+  end
+
+  service do
+    run opt_bin/"nats-server"
   end
 
 end
