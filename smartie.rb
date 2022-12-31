@@ -4,8 +4,8 @@
 class Smartie < Formula
   desc "Smartie"
   homepage "https://github.com/insidegreen/smartie"
-  url "https://github.com/insidegreen/smartie/archive/refs/tags/v0.2.0.tar.gz"
-  sha256 "4a4d5504ed4629029c7bb1c853d86fbb580fc423b8be3f3f1920170efae68663"
+  url "https://github.com/insidegreen/smartie/archive/refs/tags/v0.3.0.tar.gz"
+  sha256 "cb496061c5014d9f9de1b22c332ea2cc6c93f4e7dc1cd39461fa5b48ec478ff4"
   license "MIT"
 
   depends_on "go" => :build
